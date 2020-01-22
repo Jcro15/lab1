@@ -20,6 +20,7 @@ public class PiDigitThread extends  Thread {
 
     @Override
     public  void run() {
+        System.out.println("aaaaa");
         double sum = 0;
 
         for (int i = 0; i < count; i++) {
@@ -35,6 +36,9 @@ public class PiDigitThread extends  Thread {
             sum = 16 * (sum - Math.floor(sum));
             digits[i]=(byte)sum;
         }
+        System.out.println("bbbbb");
+        //System.out.println(digits.length);
+
     }
 
 

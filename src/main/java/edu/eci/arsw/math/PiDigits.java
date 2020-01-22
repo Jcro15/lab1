@@ -34,47 +34,38 @@ public class PiDigits {
         }
         int step = count / n;
         int sobrante = count % n;
-
+        System.out.println(step);
         List<PiDigitThread> threads = new ArrayList<>();
         for(int i=0; i<n; i++){
             PiDigitThread thread;
             if(i == n-1){
                 thread = new PiDigitThread(start,step+sobrante);
-                thread.run();
-
-
             }else {
                 thread = new PiDigitThread(start, step);
-
-                thread.run();
-                try {
-                    thread.join();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
             }
-            start += step+1;
+            thread.start();
+            start += step;
             threads.add(thread);
+        }
+        for(int i=0;i<n;i++){
+            try {
+                threads.get(i).join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
         byte[] digitos = null;
         byte[] c = threads.get(0).getDigits();
-
         for(int i = 1; i<threads.size();i++){
             digitos = threads.get(i).getDigits();
             byte[] temp = new byte[c.length + digitos.length];
-            //System.out.println(digitos);
             System.arraycopy(c , 0 ,temp , 0 , c.length);
             System.arraycopy(digitos , 0 ,temp , c.length , digitos.length);
-            temp=new byte[temp.length];
+            c=new byte[temp.length];
             System.arraycopy(temp , 0 ,c , 0 , temp.length);
+            digitos=null;
         }
-        System.out.println(c + " ajfdjh");
-
-
-
-
-        //PiDigitThread prueba=new PiDigitThread(start,count);
-        //prueba.run();
         return c;
     }
 
