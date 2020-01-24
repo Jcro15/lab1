@@ -1,5 +1,7 @@
 package edu.eci.arsw.math;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +36,7 @@ public class PiDigits {
         }
         int step = count / n;
         int sobrante = count % n;
-        System.out.println(step);
+        //System.out.println(step);
         List<PiDigitThread> threads = new ArrayList<>();
         for(int i=0; i<n; i++){
             PiDigitThread thread;
@@ -57,16 +59,15 @@ public class PiDigits {
         }
         byte[] digitos = null;
         byte[] c = threads.get(0).getDigits();
-        for(int i = 1; i<threads.size();i++){
-            digitos = threads.get(i).getDigits();
-            byte[] temp = new byte[c.length + digitos.length];
-            System.arraycopy(c , 0 ,temp , 0 , c.length);
-            System.arraycopy(digitos , 0 ,temp , c.length , digitos.length);
-            c=new byte[temp.length];
-            System.arraycopy(temp , 0 ,c , 0 , temp.length);
-            digitos=null;
+        ByteArrayOutputStream temporal=new ByteArrayOutputStream();
+        for(int i = 0; i<threads.size();i++){
+            try {
+                temporal.write(threads.get(i).getDigits());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        return c;
+        return temporal.toByteArray();
     }
 
     /// <summary>
@@ -75,7 +76,7 @@ public class PiDigits {
     /// <param name="m"></param>
     /// <param name="n"></param>
     /// <returns></returns>
-    private static double sum(int m, int n) {
+    public static double sum(int m, int n) {
         double sum = 0;
         int d = m;
         int power = n;
@@ -106,7 +107,7 @@ public class PiDigits {
     /// <param name="p"></param>
     /// <param name="m"></param>
     /// <returns></returns>
-    private static int hexExponentModulo(int p, int m) {
+    public static int hexExponentModulo(int p, int m) {
         int power = 1;
         while (power * 2 <= p) {
             power *= 2;

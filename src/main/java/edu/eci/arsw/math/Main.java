@@ -15,13 +15,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String a[]) {
-        //long startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
 
-        System.out.println(bytesToHex(PiDigits.getDigits(1, 1000000,200)));
+        System.out.println(bytesToHex(PiDigits.getDigits(0, 1000000,200)));
 
-        //long endTime = System.currentTimeMillis();
+        long endTime = System.currentTimeMillis();
 
-        //System.out.println("That took " + (endTime - startTime) + " milliseconds");
+        System.out.println("That took " + (endTime - startTime) + " milliseconds");
 
         //System.out.println(bytesToHex(PiDigits.getDigits(0, 10,2)));
         //System.out.println(bytesToHex(PiDigits.getDigits(1, 100,2)));
