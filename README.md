@@ -17,10 +17,10 @@
 2. Se completo la implementación adecuada de la clase CountMainThreads: 
 ![](img/CountMainThreads.png)
 
-Al iniciar los threads con la función start() se obtuvieron los siguientes resultados:
+_Al iniciar los threads con la función start() se obtuvieron los siguientes resultados:_
 ![](img/start.png)
 
-Al iniciar los threads con la función run() se obtuvieron los siguientes resultados:
+_Al iniciar los threads con la función run() se obtuvieron los siguientes resultados:_
 ![](img/run.png)
 
 + Change the beginning with start() to run(). How does the output change? Why?  
@@ -31,17 +31,17 @@ con el metodo run() los tres Threads se ejecutan en el orden en que es ejecutada
 ## Part III - Performance Evaluation
 
 #### 1. Un hilo
-6 min 49 sec
+
 ![](img/oneThread1.png)
 ![](img/oneThread.png)
 
 #### 2. Tantos hilos como procesadores(8)
-1 min 37 sec
+
 ![](img/eighthThread1.png)
 ![](img/eighthThread.png)
 
 #### 3. El doble de hilos que de procesadores
-1 min 09 sec
+
 ![](img/doubleThread1.png)
 ![](img/doubleThread.png)
 
