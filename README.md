@@ -17,10 +17,10 @@
 2. Se completo la implementación adecuada de la clase CountMainThreads: 
 ![](img/CountMainThreads.png)
 
-_Al iniciar los threads con la función start() se obtuvieron los siguientes resultados:_
+Al iniciar la ejecución de los tres threads con la función start() se obtuvieron los siguientes resultados:  
 ![](img/start.png)
 
-_Al iniciar los threads con la función run() se obtuvieron los siguientes resultados:_
+Al iniciar la ejecución de los tres threads con la función run() se obtuvieron los siguientes resultados:  
 ![](img/run.png)
 
 + Change the beginning with start() to run(). How does the output change? Why?  
