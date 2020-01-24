@@ -80,6 +80,8 @@ public class PiCalcTest {
     public void twoThreads() {
         byte[] oneThreads = PiDigits.getDigits(0, 500,1);
         byte[] twoThreads = PiDigits.getDigits(0, 500,2);
+        System.out.println(oneThreads);
+        System.out.println(twoThreads);
         assertEquals(oneThreads.length, twoThreads.length);
         for (int i=0;i<oneThreads.length;i++){
             assertEquals(oneThreads[i], twoThreads[i]);

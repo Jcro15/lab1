@@ -6,11 +6,14 @@ public class PiDigitThread extends  Thread {
     private byte[] digits;
     private static int DigitsPerSum = 8;
     private static double Epsilon = 1e-17;
+    private int posicion;
 
-    public PiDigitThread(int liminf,int count){
+    public PiDigitThread(int liminf,int count,byte[] resultado, int posicion){
         this.liminf=liminf;
         this.count = count;
-        digits=new byte[count];
+        digits=resultado;
+        this.posicion=posicion;
+
     }
 
     public byte[] getDigits() {
@@ -33,7 +36,7 @@ public class PiDigitThread extends  Thread {
             }
 
             sum = 16 * (sum - Math.floor(sum));
-            digits[i]=(byte)sum;
+            digits[posicion+i]=(byte)sum;
         }
 
     }

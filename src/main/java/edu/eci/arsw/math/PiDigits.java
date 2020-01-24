@@ -35,14 +35,14 @@ public class PiDigits {
         }
         int step = count / n;
         int sobrante = count % n;
-        //System.out.println(step);
         List<PiDigitThread> threads = new ArrayList<>();
+        byte[] resultado=new byte[count];
         for(int i=0; i<n; i++){
             PiDigitThread thread;
             if(i == n-1){
-                thread = new PiDigitThread(start,step+sobrante);
+                thread = new PiDigitThread(start,step+sobrante,resultado,i*step);
             }else {
-                thread = new PiDigitThread(start, step);
+                thread = new PiDigitThread(start, step,resultado,i*step);
             }
             thread.start();
             start += step;
@@ -55,15 +55,7 @@ public class PiDigits {
                 e.printStackTrace();
             }
         }
-        ByteArrayOutputStream temporal=new ByteArrayOutputStream();
-        for(int i = 0; i<threads.size();i++){
-            try {
-                temporal.write(threads.get(i).getDigits());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return temporal.toByteArray();
+        return resultado;
     }
 
     /// <summary>
