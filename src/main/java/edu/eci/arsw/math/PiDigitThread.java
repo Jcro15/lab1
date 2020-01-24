@@ -37,6 +37,4 @@ public class PiDigitThread extends  Thread {
         }
 
     }
-
-
 }

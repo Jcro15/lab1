@@ -55,9 +55,6 @@ public class PiDigits {
                 e.printStackTrace();
             }
         }
-
-        byte[] digitos = null;
-        byte[] c = threads.get(0).getDigits();
         ByteArrayOutputStream temporal=new ByteArrayOutputStream();
         for(int i = 0; i<threads.size();i++){
             try {
