@@ -27,7 +27,6 @@ public class PiDigits {
         if (start < 0) {
             throw new RuntimeException("Invalid Interval");
         }
-
         if (count < 0) {
             throw new RuntimeException("Invalid Interval");
         }
@@ -55,8 +54,8 @@ public class PiDigits {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }
+
         byte[] digitos = null;
         byte[] c = threads.get(0).getDigits();
         ByteArrayOutputStream temporal=new ByteArrayOutputStream();
