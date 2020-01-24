@@ -11,10 +11,10 @@
 
 
 ## Part I - Introduction to Java Threads
-1. Se completó la implementación de la clase CountThread: 
+1. Se completó la implementación adecuada de la clase CountThread: 
 ![](img/CountThread.png)
 
-2. Se completo la implementación de la clase CountMainThreads: 
+2. Se completo la implementación adecuada de la clase CountMainThreads: 
 ![](img/CountMainThreads.png)
 
 + Change the beginning with start() to run(). How does the output change? Why?
