@@ -8,10 +8,10 @@
 
 ## Part I - Introduction to Java Threads
 1. Se completó la implementación adecuada de la clase CountThread: 
-![](BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/CountThread.png)
+![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/CountThread.png)
 
 2. Se completo la implementación adecuada de la clase CountMainThreads: 
-![](BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/CountMainThreads.png)
+![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/CountMainThreads.png)
 
 Al iniciar la ejecución de los tres threads con la función start() se obtuvieron los siguientes resultados:  
 ![](BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/start.png)
