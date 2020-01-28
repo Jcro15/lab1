@@ -1,5 +1,7 @@
 package arsw.threads;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Un galgo que puede correr en un carril
  * 
@@ -26,8 +28,7 @@ public class Galgo extends Thread {
 			
 			if (paso == carril.size()) {						
 				carril.finish();
-				int ubicacion=regl.getUltimaPosicionAlcanzada();
-				regl.setUltimaPosicionAlcanzada(ubicacion+1);
+				int ubicacion=regl.getUltimaPosicionAlcanzada().getAndIncrement();
 				System.out.println("El galgo "+this.getName()+" llego en la posicion "+ubicacion);
 				if (ubicacion==1){
 					regl.setGanador(this.getName());
