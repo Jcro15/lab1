@@ -28,7 +28,7 @@ con el metodo run() los tres Threads se ejecutan en el orden en que es ejecutada
 
 #### 1. Un hilo
 
-![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/CountMainThreads.png)
+![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/oneThread1.png)
 ![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/oneThread.png)
 
 #### 2. Tantos hilos como procesadores(8)
