@@ -13,7 +13,7 @@
 
 ## Part I
 1. Se presenta a continuación como se comparta el procesador y sus nucleos cuando solo se ejecutan con un solo hilo.
-![](DOGS_RACE\CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE\img\nucleos1.png)
+![](https://github.com/Jcro15/lab1/blob/master/DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/img/nucleos1.png)
 
 2. Se presenta a continuación como se comparta el procesador y sus nucleos cuando solo se ejecutan con un tres hilos.
-![](DOGS_RACE\CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE\img\nucleos2.png)
+![](https://github.com/Jcro15/lab1/blob/master/DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/img/nucleos2.png)
