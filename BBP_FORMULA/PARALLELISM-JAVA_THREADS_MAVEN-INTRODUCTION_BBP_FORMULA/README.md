@@ -57,3 +57,10 @@ Para poder registrar los tiempos decidimos realizarlo con 100000 datos de PI:
 #### Grafica de Tiempo VS numero de hilos.
 
 ![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/grafica.png)
+
+
++ **According to Amdahls law, where S (n) is the theoretical performance improvement, P the parallel fraction of the algorithm, and n the number of threads, the greater n, the greater the improvement should be. Why is the best performance not achieved with the 500 threads? How does this performance compare when 200 are used?**  
+Porque a partir de cierto punto, el tiempo que toma hacer el cambio de contexto entre los subprocesos supera el tiempo que estos tienen para ejecutar, por lo que aumentar el numero de estos genera un efecto contrario al supuesto por la formula 
+
++ **How does the solution behave using as many processing threads as cores compared to the result of using twice as much?**  
+El tiempo necesario para conseguir la respuesta fue menor, además las gráficas del monitor muestran que en el caso con más hilos se generan menos valles en el uso del procesador, por lo que se podría decir que se tiene un mejor uso de este pues se mantiene a un nivel aproximado del 90% 
