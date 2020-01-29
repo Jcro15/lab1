@@ -28,19 +28,32 @@ con el metodo run() los tres Threads se ejecutan en el orden en que es ejecutada
 
 #### 1. Un hilo
 
-![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/oneThread1.png)
 ![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/oneThread.png)
 
 #### 2. Tantos hilos como procesadores(8)
 
-![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/eighthThread1.png)
 ![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/eighthThread.png)
 
 #### 3. El doble de hilos que de procesadores
 
-![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/doubleThread1.png)
 ![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/doubleThread.png)
 
 #### 4. Con 200 hilos
 
+![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/twoHundred.png)
+
 #### 5. Con 500 hilos
+
+![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/fiveHundred.png)
+
+
+Para poder registrar los tiempos decidimos realizarlo con 100000 datos de PI:
++ **Un hilo:** Este tomó 371730 milisegundos.
++ **Tantos hilos como procesadores(8):** Este tomó 67240 milisegundos.
++ **El doble de hilos que de procesadores:** Este tomó 48288 milisegundos.
++ **Con 200 hilos:** Este tomó 39406 milisegundos.
++ **Con 500 hilos:** Este tomó 39328 milisegundos.
+
+#### Grafica de Tiempo VS numero de hilos.
+
+![](https://github.com/Jcro15/lab1/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/grafica.png)
