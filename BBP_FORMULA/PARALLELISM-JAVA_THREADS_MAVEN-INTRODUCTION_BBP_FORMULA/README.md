@@ -49,7 +49,7 @@ con el metodo run() los tres Threads se ejecutan en el orden en que es ejecutada
 
 Para poder registrar los tiempos decidimos realizarlo con 100000 datos de PI:
 + **Un hilo:** Este tomó 371730 milisegundos.
-+ **Tantos hilos como procesadores(8):** Este tomó 67240 milisegundos.
++ **Tantos hilos como procesadores(12):** Este tomó 67240 milisegundos.
 + **El doble de hilos que de procesadores:** Este tomó 48288 milisegundos.
 + **Con 200 hilos:** Este tomó 39406 milisegundos.
 + **Con 500 hilos:** Este tomó 39328 milisegundos.
